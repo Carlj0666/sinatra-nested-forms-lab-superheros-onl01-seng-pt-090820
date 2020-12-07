@@ -1,14 +1,14 @@
 class SuperHero
-  attr_reader :name, :power, :bio, :team, :motto
+  attr_reader :team, :motto, :name, :power, :bio
 
   @@all = []
 
   def initialize(params)
+    @team = params[:team]
+    @motto = params[:moto]
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
-    @team = params[:team]
-    @motto = params[:moto]
     @@all << self
   end
 

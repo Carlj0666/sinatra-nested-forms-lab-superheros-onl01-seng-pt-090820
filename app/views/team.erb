@@ -1,14 +1,14 @@
-<h1>team.name</h1>
+<h1>team @team.name</h1>
   <div class="team">
-  <h4>Team Motto <%= team.motto %></h4>
+  <h4>Team Motto <%= @team.motto %></h4>
   </div>
 
-<h2>Hero Name: SuperHero.name</h2>
-  <% team.each_with_index do |team, i| %>
-    <div class="ship">
-      <% if i == 0 %>
-      <h3><p>Hero Power: <%= SuperHero.power %></p></h3>
-      <h3><p>Hero Bio: <%= SuperHero.bio %></p></h3>
-      <% end %>
-    </div>
+# <h2>Hero Name: SuperHero.name</h2>
+#   <% @team.each_with_index do |team, i| %>
+#     <div class="team">
+#       <% if i == 0 %>
+#       <h3><p>Hero Power: <%= SuperHero.power %></p></h3>
+#       <h3><p>Hero Bio: <%= SuperHero.bio %></p></h3>
+#       <% end %>
+#     </div>
   <% end %>
